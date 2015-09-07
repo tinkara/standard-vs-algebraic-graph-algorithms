@@ -16,4 +16,5 @@ We compared algorithms on different test graphs.
 The results show that standars implementation with graphs represented as list of vertices and edges is more time efficient as algebraic.
 
 **Author**: Tinkara Knez
+
 **Mentor**: Tomaž Dobravec, Ph.D.
