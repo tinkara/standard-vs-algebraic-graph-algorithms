@@ -1,0 +1,1 @@
+{"TestSet": {    "ShortName"        : "TS15",    "Description"      : "Testing testset",    "HTMLDescFile"     : "TestSet15.html",    "N"                : 150,    "TimeLimit"		   : 30,    "TestRepeat"       : 1,    "QuickTest"        : true,    "TestSetFiles"     : ["testset15/*"],    "DescriptionFile"  : "testset15.txt",  }}

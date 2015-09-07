@@ -1,0 +1,11 @@
+{
+  "Algorithm" : {	
+   "ShortName"      : "BellmanFord",             
+   "Description"    : "Bellman Ford Algorithm for finding shortest paths",
+   "HTMLDescFile"   : "BellmanFord.html",
+   "Author"         : "Tinkara",
+   "Date"           : "01/07/2015",
+   "Classes"        : ["BellmanFordShortestPathGraphAlgorithm.java"],
+   "MainClassName"  : "BellmanFordShortestPathGraphAlgorithm"
+  }
+} 

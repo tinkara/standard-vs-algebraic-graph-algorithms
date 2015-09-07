@@ -1,0 +1,11 @@
+{
+  "Algorithm" : {	
+   "ShortName"      : "PeerPressure",             
+   "Description"    : "Peer pressure algorithm for clustering",
+   "HTMLDescFile"   : "PeerPressure.html",
+   "Author"         : "Tinkara",
+   "Date"           : "01/07/2015",
+   "Classes"        : ["PeerPressureClusteringAlgorithm.java"],
+   "MainClassName"  : "PeerPressureClusteringAlgorithm"
+  }
+} 

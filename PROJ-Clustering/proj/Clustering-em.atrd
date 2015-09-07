@@ -1,0 +1,49 @@
+{
+  "ResultDescription":
+  { 
+    "Format"           : "CSV",
+    "Delimiter"        : ";",
+    "TestParameters"   : ["V", "E", "Clusters", "Probability"],    	
+    "ResultParameters" : ["Tmin", "Check", "CheckV2"],    	
+  
+    "Parameters":   [	    
+      {
+       "Name":        "V",             
+       "Description": "Number of vertices", 
+       "Type":        "int"       
+      },
+       {
+       "Name":        "E",             
+       "Description": "number of edges", 
+       "Type":        "int"       
+      },
+       {
+       "Name":        "Clusters",             
+       "Description": "number of clusters", 
+       "Type":        "int"       
+      },
+      {
+       "Name":        "Probability",             
+       "Description": "Probability that we put edge inside of the cluster when creating test graphs", 
+       "Type":        "int"       
+      },
+      {
+       "Name"        : "Tmin",             
+       "Description" : "Algorithm MIN time",             
+       "Type"        : "timer",          
+       "Subtype"     : "0 MIN"    
+      },
+      {
+       "Name"        : "Check",             
+       "Description" : "The correctness of the algorithm (OK or NOK)", 
+       "Type"        : "string"       
+      },
+      {
+       "Name"        : "CheckV2",             
+       "Description" : "The correctness of the algorithm - different definition (OK or NOK)", 
+       "Type"        : "string"       
+      }
+    ]
+  }
+}
+ 

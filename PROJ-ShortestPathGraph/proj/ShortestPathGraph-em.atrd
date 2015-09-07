@@ -1,0 +1,33 @@
+{
+  "ResultDescription":
+  { 
+    "Format"           : "CSV",
+    "Delimiter"        : ";",
+    "TestParameters"   : ["V", "E"],    	
+    "ResultParameters" : ["Tmin", "Check"],    	
+  
+    "Parameters":   [	    
+      {
+       "Name":        "V",             
+       "Description": "Number of vertices", 
+       "Type":        "int"       
+      },
+       {
+       "Name":        "E",             
+       "Description": "number of edges", 
+       "Type":        "int"       
+      },
+      {
+       "Name"        : "Tmin",             
+       "Description" : "Algorithm MIN time",             
+       "Type"        : "timer",          
+       "Subtype"     : "0 MIN"    
+      },
+      {
+       "Name"        : "Check",             
+       "Description" : "The correctness of the algorithm (OK or NOK)", 
+       "Type"        : "string"       
+      }
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "Algorithm" : {	
+   "ShortName"      : "Dijkstra",             
+   "Description"    : "Dijkstra algorithm for finding shortest paths",
+   "HTMLDescFile"   : "dijkstra.html",
+   "Author"         : "Tinkara",
+   "Date"           : "01/07/2015",
+   "Classes"        : ["DijkstraShortestPathGraphAlgorithm.java"],
+   "MainClassName"  : "DijkstraShortestPathGraphAlgorithm"
+  }
+} 

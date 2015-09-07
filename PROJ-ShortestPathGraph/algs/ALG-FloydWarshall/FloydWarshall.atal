@@ -1,0 +1,11 @@
+{
+  "Algorithm" : {	
+   "ShortName"      : "FloydWarshall",             
+   "Description"    : "Floyd Warshall algoritmh for finding shortest paths",
+   "HTMLDescFile"   : "floydwarshall.html",
+   "Author"         : "Tinkara",
+   "Date"           : "01/07/2015",
+   "Classes"        : ["FloydWarshallShortestPathGraphAlgorithm.java"],
+   "MainClassName"  : "FloydWarshallShortestPathGraphAlgorithm"
+  }
+} 
