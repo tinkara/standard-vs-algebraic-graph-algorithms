@@ -23,6 +23,7 @@ public class BellmanFordShortestPathAlgorithm extends ShortestPathAbsAlgorithm {
 			}
 		}
 		//ugotavljanje ce obstaja negativni cikel
+		/*
 		temp=mnozenjeMINPLUSZDesne(matrika,d);
 		for(int k=0; k<stVozlisc;k++){
 			if(temp[k] != d[k]){
@@ -30,31 +31,27 @@ public class BellmanFordShortestPathAlgorithm extends ShortestPathAbsAlgorithm {
 				break;
 			}
 		}
+		*/
 		
 	} 
 	public static int[] mnozenjeMINPLUSZDesne(int[][] matrika, int[] vektor){
 		//dimenzija vektorja
 		int sirina=vektor.length;
-		int temp=0;
-		//inicializacija vektorja, v katerem bo rezultat
-		int[] rezultat=new int[sirina];
 		for(int i=0; i<sirina;i++){
 			//na zacetku je minimum maksimalna vrednost
-			int min=Integer.MAX_VALUE;
 			for(int j=0; j<sirina;j++){
-				if (matrika[j][i]==Integer.MAX_VALUE || vektor[j]==Integer.MAX_VALUE){
+				int temp=0;
+				if (matrika[i][j]==Integer.MAX_VALUE || vektor[i]==Integer.MAX_VALUE){
 					temp=Integer.MAX_VALUE;
 				}
 				else{
-					temp=vektor[j]+matrika[j][i];
+					temp=vektor[i]+matrika[i][j];
 				}
-				//ce je sestevek manjsi kot trenutni minimum, minimum spremenimo
-				if(temp<min){
-					min=temp;
+				if(vektor[j]>temp){
+					vektor[j]=temp;
 				}
 			}
-			rezultat[i]=min;
 		}
-		return rezultat;
+		return vektor;
 	}
 }
