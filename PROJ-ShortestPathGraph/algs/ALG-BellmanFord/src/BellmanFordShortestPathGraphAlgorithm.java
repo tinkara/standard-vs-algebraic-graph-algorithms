@@ -11,15 +11,17 @@ public class BellmanFordShortestPathGraphAlgorithm extends ShortestPathGraphAbsA
 		}
 		//razdalja od zelenega vozlisca do sebe je 0
 		d[v-1]=0;
-		for (int j=0; j<stVozlisc;j++){
-			for(int k=0; k<povezave[j].length;k++){
-				//v 1 je w, v 0 je začetek
-				int temp=d[j] + povezave[j][k][1];
-				if (d[j]==Integer.MAX_VALUE){
-					temp=Integer.MAX_VALUE;
-				}
-				if (temp < d[povezave[j][k][0]]) {
-					d[povezave[j][k][0]] = temp;
+		for(int i=0; i<stVozlisc-1;i++){
+			for (int j=0; j<stVozlisc;j++){
+				for(int k=0; k<povezave[j].length;k++){
+					//v 1 je w, v 0 je konec
+					int temp=d[j] + povezave[j][k][1];
+					if (d[j]==Integer.MAX_VALUE){
+						temp=Integer.MAX_VALUE;
+					}
+					if (temp < d[povezave[j][k][0]]) {
+						d[povezave[j][k][0]] = temp;
+					}
 				}
 			}
 		}
